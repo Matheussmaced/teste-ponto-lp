@@ -169,7 +169,7 @@ export default function ContactForm() {
             className="relative"
           >
             {/* Decorative background for the form */}
-            <div className="absolute -inset-4 bg-linear-to-br from-blue-600/20 to-purple-600/20 blur-3xl -z-10 rounded-[3rem]"></div>
+            <div className="absolute -inset-4 bg-linear-to-br   blur-3xl -z-10 rounded-[3rem]"></div>
 
             <div className="bg-white/3 backdrop-blur-xl border border-white/10 text-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
               {/* Subtle grid pattern */}
