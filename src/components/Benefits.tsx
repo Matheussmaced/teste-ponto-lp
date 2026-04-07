@@ -24,18 +24,18 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="beneficios" className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="beneficios" className="scroll-mt-32 py-24 bg-transparent relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="flex-1 lg:pr-10"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
-              Transforme a gestão de ponto digital.
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
+              Transforme a gestão de <p className="text-orange-500">ponto digital.</p>
             </h2>
             <p className="text-lg text-slate-500 mb-10 leading-relaxed">
               Pensada para empresas que exigem precisão, segurança e praticidade no dia a dia. Chega de processos manuais e falhos.
@@ -45,7 +45,7 @@ export default function Benefits() {
               {benefits.map((benefit, i) => (
                 <div key={i} className="flex gap-4 items-start">
                   <div className="mt-1">
-                    <CheckCircle2 className="w-6 h-6 text-slate-800" />
+                    <CheckCircle2 className="w-6 h-6 text-orange-500" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-slate-900">{benefit.title}</h4>
@@ -57,7 +57,7 @@ export default function Benefits() {
           </motion.div>
 
           {/* Visual Container */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -78,26 +78,26 @@ export default function Benefits() {
                 </div>
 
                 <div className="h-32 bg-white rounded-xl border border-slate-100 flex items-center justify-center p-4">
-                   <div className="w-full h-full relative">
-                      <svg viewBox="0 0 100 30" className="w-full h-full preserve-aspect-ratio-none">
-                        <path d="M0,20 Q10,5 20,20 T40,15 T60,25 T80,10 T100,20" fill="none" stroke="#0f172a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <circle cx="20" cy="20" r="1.5" fill="#0f172a" />
-                        <circle cx="40" cy="15" r="1.5" fill="#0f172a" />
-                        <circle cx="60" cy="25" r="1.5" fill="#0f172a" />
-                        <circle cx="80" cy="10" r="1.5" fill="#0f172a" />
-                      </svg>
-                   </div>
+                  <div className="w-full h-full relative">
+                    <svg viewBox="0 0 100 30" className="w-full h-full preserve-aspect-ratio-none">
+                      <path d="M0,20 Q10,5 20,20 T40,15 T60,25 T80,10 T100,20" fill="none" stroke="#0f172a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <circle cx="20" cy="20" r="1.5" fill="#0f172a" />
+                      <circle cx="40" cy="15" r="1.5" fill="#0f172a" />
+                      <circle cx="60" cy="25" r="1.5" fill="#0f172a" />
+                      <circle cx="80" cy="10" r="1.5" fill="#0f172a" />
+                    </svg>
+                  </div>
                 </div>
 
                 <div className="flex gap-4 mt-2">
-                   <div className="flex-1 bg-white border border-slate-100 p-4 rounded-xl">
-                      <p className="text-xs text-slate-400 font-medium tracking-wider mb-1 uppercase">Produtividade</p>
-                      <p className="text-2xl font-bold text-slate-900">+45%</p>
-                   </div>
-                   <div className="flex-1 bg-white border border-slate-100 p-4 rounded-xl">
-                      <p className="text-xs text-slate-400 font-medium tracking-wider mb-1 uppercase">Confiabilidade</p>
-                      <p className="text-2xl font-bold text-slate-900">99.9%</p>
-                   </div>
+                  <div className="flex-1 bg-white border border-slate-100 p-4 rounded-xl">
+                    <p className="text-xs text-slate-400 font-medium tracking-wider mb-1 uppercase">Produtividade</p>
+                    <p className="text-2xl font-bold text-slate-900">+45%</p>
+                  </div>
+                  <div className="flex-1 bg-white border border-slate-100 p-4 rounded-xl">
+                    <p className="text-xs text-slate-400 font-medium tracking-wider mb-1 uppercase">Confiabilidade</p>
+                    <p className="text-2xl font-bold text-slate-900">99.9%</p>
+                  </div>
                 </div>
               </div>
             </div>

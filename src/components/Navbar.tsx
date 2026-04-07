@@ -20,24 +20,54 @@ export default function Navbar() {
     <div className="fixed top-6 w-full z-50 px-4 sm:px-6 flex justify-center">
       <nav
         className={`w-full max-w-6xl rounded-full transition-all duration-300 border ${isScrolled
-            ? "bg-white/90 backdrop-blur-md shadow-sm border-slate-200"
-            : "bg-white/50 backdrop-blur-sm border-white/20"
+          ? "bg-white/90 backdrop-blur-md shadow-sm border-slate-200"
+          : "bg-white/50 backdrop-blur-sm border-white/20"
           }`}
       >
         <div className="px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
-              <Image src="/assets/Logo-InterCert.png" alt="Ponto Intercert Logo" width={140} height={40} className="h-20 w-auto object-contain" />
+              <a href="#inicio" className="cursor-pointer">
+                <Image
+                  src="/assets/Logo-InterCert.png"
+                  alt="Ponto Intercert Logo"
+                  width={140}
+                  height={40}
+                  className="h-20 w-auto object-contain"
+                />
+              </a>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#funcionalidades" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Funcionalidades</a>
-              <a href="#beneficios" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Benefícios</a>
-              <a href="#precos" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Preços</a>
-              <button className="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
-                Acesso
-              </button>
+              <a href="#funcionalidades" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                Funcionalidades
+              </a>
+
+              <a href="#beneficios" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                Benefícios
+              </a>
+
+              <a href="#como-funciona" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                Como funciona
+              </a>
+
+              <a href="#planos" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                Planos
+              </a>
+
+              <a href="#depoimentos" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                Clientes
+              </a>
+
+              <a
+                href="https://api.whatsapp.com/send?1=pt_BR&phone=558821015901"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-orange-500 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-orange-600 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5"
+              >
+                Falar com um especialista
+              </a>
             </div>
 
             {/* Mobile Menu Button */}

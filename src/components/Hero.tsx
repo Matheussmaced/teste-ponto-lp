@@ -5,9 +5,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-screen flex items-center">
+    <section id="inicio" className="scroll-mt-32 relative pt-32 pb-20 lg:pt-12 lg:pb-32 overflow-hidden min-h-screen flex items-center">
       {/* Background Decor */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-100 via-white to-white"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-8">
@@ -31,7 +30,7 @@ export default function Hero() {
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight mb-6 leading-[1.1]"
             >
               Transforme a gestão <br />
-              <span className="text-slate-900">da sua equipe.</span>
+              <span className="text-orange-500">da sua equipe.</span>
             </motion.h1>
 
             <motion.p
@@ -49,12 +48,12 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 justify-start"
             >
-              <button className="bg-slate-900 text-white px-8 py-4 rounded-full text-sm font-bold hover:bg-slate-800 transition-all shadow-md shadow-slate-900/10 hover:shadow-lg hover:-translate-y-0.5">
-                Solicitar Demonstração
-              </button>
-              <button className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full text-sm font-bold hover:bg-slate-50 transition-all hover:-translate-y-0.5 shadow-sm">
-                Ver Plataforma
-              </button>
+              <a
+                href="#contato"
+                className="bg-orange-500 text-white px-8 py-4 rounded-full text-sm font-bold hover:bg-orange-600 transition-all shadow-md shadow-slate-900/10 hover:shadow-lg hover:-translate-y-0.5 cursor-pointer inline-block text-center"
+              >
+                Começar agora
+              </a>
             </motion.div>
           </div>
 
