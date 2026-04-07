@@ -1,7 +1,7 @@
 "use client";
 
-import { createLead } from "@/leads";
-import { CreateLeadDTO } from "@/leads/types";
+import { createLead } from "../leads";
+import { CreateLeadDTO } from "../leads/types";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { toast } from "sonner";

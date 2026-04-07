@@ -1,4 +1,4 @@
-import { apiFetch } from "@/services/api";
+import { apiFetch } from "../services/api";
 import { CreateLeadDTO } from "./types";
 
 export async function createLead(data: CreateLeadDTO) {
